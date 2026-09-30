@@ -1,0 +1,203 @@
+ColorOS Notes
+
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reshvah Initiative | Link in Bio</title>
+ 
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+ 
+    <!-- FontAwesome for professional icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+ 
+    <!-- Google Fonts: Inter & Playfair Display for high-end aesthetic feel -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                    },
+                    colors: {
+                        brandDark: '#080C14',
+                        brandCard: '#111827',
+                        brandHover: '#1F2937',
+                        brandGold: '#D4AF37',
+                        brandGoldLight: '#F3E5AB',
+                        brandBorder: '#374151'
+                    }
+                }
+            }
+        }
+    </script>
+ 
+    <style>
+        .bg-glow {
+            background: radial-gradient(circle at 50% 10%, rgba(212, 175, 55, 0.08) 0%, transparent 65%);
+        }
+ 
+        .glass-card {
+            background: rgba(17, 24, 39, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.15);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+        }
+
+        .glass-card:hover {
+            border-color: rgba(212, 175, 55, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(212, 175, 55, 0.2);
+        }
+
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF 30%, #F3E5AB 70%, #D4AF37 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+</head>
+<body class="bg-brandDark text-slate-100 font-sans min-h-screen flex flex-col items-center justify-between selection:bg-[#D4AF37] selection:text-slate-950 bg-glow relative overflow-x-hidden">
+
+    <!-- Ambient Background Glow Elements -->
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-[500px] h-[350px] bg-[#D4AF37]/10 blur-[140px] rounded-full pointer-events-none -z-10"></div>
+
+    <main class="w-full max-w-md mx-auto px-5 py-14 flex flex-col items-center flex-grow">
+ 
+        <!-- Aesthetic Typography Logo Emblem -->
+        <div class="relative group mb-6">
+            <div class="absolute -inset-1.5 bg-gradient-to-r from-[#D4AF37] to-amber-700 rounded-2xl blur-md opacity-40 group-hover:opacity-75 transition duration-500"></div>
+            <div class="relative px-8 py-5 rounded-2xl bg-brandCard border border-[#D4AF37]/40 flex flex-col items-center justify-center shadow-2xl">
+                <span class="text-xs uppercase tracking-[0.3em] text-[#D4AF37] font-semibold mb-1">Est. 2026</span>
+                <h1 class="text-2xl font-serif font-bold gold-gradient-text tracking-wide text-center">
+                    RESHVAH INITIATIVE 
+                </h1>
+            </div>
+        </div>
+
+        <!-- Subheading & Tagline -->
+        <p class="text-xs font-medium tracking-[0.2em] text-slate-400 text-center uppercase mb-10">
+            Rooted in heritage, flowing to the future.
+        </p>
+
+        <!-- Links Stack -->
+        <div class="w-full flex flex-col space-y-4">
+
+            <!-- 1. Official Website -->
+            <a href="https://reshvahinitiative-sketch.github.io/Reshvah-Initiative/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="glass-card group relative flex items-center justify-between p-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                <div class="flex items-center space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-[#D4AF37]/10 border border-[#D4AF37]/20 flex items-center justify-center text-[#D4AF37] group-hover:bg-[#D4AF37] group-hover:text-slate-950 transition-all duration-300 shadow-inner">
+                        <i class="fa-solid fa-globe text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase tracking-widest text-[#D4AF37] font-bold mb-0.5">Official Platform</span>
+                        <h2 class="text-base font-semibold text-white group-hover:text-[#F3E5AB] transition-colors">Reshvah Website</h2>
+                    </div>
+                </div>
+                <div class="text-slate-500 group-hover:text-[#D4AF37] transition-transform group-hover:translate-x-1 duration-300 pr-2">
+                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- 2. Research Fellow Application -->
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLScduMpTYzhKapeQ9fxlGQ8YEE9URl2KboNkEpMta-9LXM6g8Q/viewform?usp=preview" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="glass-card group relative flex items-center justify-between p-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                <div class="flex items-center space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-sky-500/10 border border-sky-500/20 flex items-center justify-center text-sky-400 group-hover:bg-sky-500 group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fa-solid fa-file-pen text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase tracking-widest text-sky-400 font-bold mb-0.5">Join Our Team</span>
+                        <h2 class="text-base font-semibold text-white group-hover:text-sky-200 transition-colors">Research Fellow Application</h2>
+                    </div>
+                </div>
+                <div class="text-slate-500 group-hover:text-sky-400 transition-transform group-hover:translate-x-1 duration-300 pr-2">
+                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- 3. LinkedIn Company Page -->
+            <a href="https://www.linkedin.com/company/reshvahinitiative/" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="glass-card group relative flex items-center justify-between p-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                <div class="flex items-center space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:bg-blue-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fa-brands fa-linkedin-in text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase tracking-widest text-blue-400 font-bold mb-0.5">Professional Network</span>
+                        <h2 class="text-base font-semibold text-white group-hover:text-blue-200 transition-colors">LinkedIn Company Page</h2>
+                    </div>
+                </div>
+                <div class="text-slate-500 group-hover:text-blue-400 transition-transform group-hover:translate-x-1 duration-300 pr-2">
+                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- 4. Instagram Profile -->
+            <a href="https://www.instagram.com/reshvah_initiative?utm_source=ig_web_button_share_sheet&stkn=ZDNlZDc0MzIxNw==" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="glass-card group relative flex items-center justify-between p-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                <div class="flex items-center space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-pink-500/10 border border-pink-500/20 flex items-center justify-center text-pink-400 group-hover:bg-pink-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fa-brands fa-instagram text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase tracking-widest text-pink-400 font-bold mb-0.5">Community & Updates</span>
+                        <h2 class="text-base font-semibold text-white group-hover:text-pink-200 transition-colors">Instagram Profile</h2>
+                    </div>
+                </div>
+                <div class="text-slate-500 group-hover:text-pink-400 transition-transform group-hover:translate-x-1 duration-300 pr-2">
+                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+            <!-- 5. Facebook Page -->
+            <a href="https://www.facebook.com/profile.php?id=61593892145141" 
+               target="_blank" 
+               rel="noopener noreferrer"
+               class="glass-card group relative flex items-center justify-between p-4 rounded-2xl transition-all duration-300 hover:scale-[1.02]">
+                <div class="flex items-center space-x-4">
+                    <div class="w-11 h-11 rounded-xl bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:bg-indigo-600 group-hover:text-white transition-all duration-300 shadow-inner">
+                        <i class="fa-brands fa-facebook-f text-lg"></i>
+                    </div>
+                    <div>
+                        <span class="block text-[10px] uppercase tracking-widest text-indigo-400 font-bold mb-0.5">Connect With Us</span>
+                        <h2 class="text-base font-semibold text-white group-hover:text-indigo-200 transition-colors">Facebook Page</h2>
+                    </div>
+                </div>
+                <div class="text-slate-500 group-hover:text-indigo-400 transition-transform group-hover:translate-x-1 duration-300 pr-2">
+                    <i class="fa-solid fa-chevron-right text-sm"></i>
+                </div>
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full py-6 text-center text-xs text-slate-500 border-t border-slate-800/80 mt-8 tracking-wider">
+        <p>© <span id="currentYear">2026</span> Reshvah Initiative. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.getElementById('currentYear').textContent = new Date().getFullYear();
+    </script>
+</body>
+</html>
+
+
